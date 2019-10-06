@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg  sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <a class="navbar-brand text-uppercase" href="">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,11 +54,13 @@
                         <h5 class="card-title">Summary: Latitude vs. X</h5>
                     </div>
 
-                    <div class="card-body">
-                        <img class="card-img p-3 float-left w-50" src="visualizations/CityLatvsMaxTemp.png" alt="Lat vs. Max Temp">
+                    <div class="card-body text-justify pt-5 px-5">
+                        <img class="card-img p-3 float-left w-50 mr-4" src="visualizations/CityLatvsMaxTemp.png" alt="Lat vs. Max Temp">
                         <p class="card-text">
-                            Assigning 1,500 random Latitude and Longitudes, I utilized the Python CitiPy library to find the city closest to the Lat/Lon (dropping all duplicates) to get a listing of over 600 cities.</p>
-                        <p> I utilized OpenWeatherMapAPI to get the weather for the cities (dropping cities with no data) to create a dataframe of weather information for over 500 cities.</p>
+                            In this project I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To create this representative model of weather across world cities, I utilized tools such as Pandas, Jupyter Notebooks,
+                            and the OpenWeatherMap API.</p>
+                        <p class="card-text"> I then built a series of scatter plots using Matplotlib to showcase the relationship between the latitude and factors such as temperature, humidity, cloudiness, and wind speed. This site provides the source data used for this project
+                            along with the 4 plots that I created. </p>
 
                     </div>
                 </div>

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg  sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <a class="navbar-brand text-uppercase" href="">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,12 +54,10 @@
                         <h5 class="card-title">Humidity</h5>
                     </div>
 
-                    <div class="card-body d-flex flex-column align-items-center">
+                    <div class="card-body d-flex flex-column align-items-center text-justify">
                         <img class="card-img pb-4 w-75 " src="visualizations/CityLatvsHumidity.png" alt="Lat vs. Humidity">
                         <p class="card-text px-4">
-                            Assigning 1,500 random Latitude and Longitudes, I utilized the Python CitiPy library to find the city closest to the Lat/Lon (dropping all duplicates) to get a listing of over 600 cities.</p>
-                        <p class="card-text px-4">
-                            I utilized OpenWeatherMapAPI to get the weather for the cities (dropping cities with no data) to create a dataframe of weather information for over 500 cities.</p>
+                            There is no strong relationship between latitude and humidity. It is, however, interesting that most cities are at over 60% humidity, with a large number at over 80% humidity. </p>
 
                     </div>
                 </div>
